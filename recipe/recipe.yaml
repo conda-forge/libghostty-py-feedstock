@@ -1,5 +1,5 @@
 context:
-  version: "0.3.1"
+  version: "0.3.2"
 
 package:
   name: libghostty-py
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/davidbrochart/libghostty-py/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: f827c4ecf4205bfbda163eacab227739254141f817152b29abed1d95bc036c23
+  sha256: 360bcb8dca3b19de0ce84037515938bd41154a0f98daaec8a06b06c7d18c971e
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - cffi
-    - libghostty-vt ==1.0.1
+    - libghostty-vt ==1.0.2
 
 tests:
   - python:
